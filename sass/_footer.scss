@@ -1,0 +1,56 @@
+@import "vars";
+
+#footer{
+    display: grid;
+    height: 7vh;
+    background: $azul;
+    align-items: center;
+    grid-template-columns: repeat(8, 1fr);
+    & .footer__logo{
+        font-weight: bold;
+        font-size: 24px;
+        grid-column: 2/3;
+        & a{
+            text-decoration: none;
+            color: $blanco;
+        }
+    }
+    & .footer__icon{
+        grid-column: 6/9;
+        display: flex;
+        justify-content: space-around;
+        color: $blanco;
+    }
+}
+
+$redes:(
+    github: #333,
+    gmail: #c71610,
+    instagram: #DD2A7B,
+);
+
+@each $red, $color in $redes {
+    .footer__icon-#{$red} {
+        background-color: $color;
+    }
+}
+
+$estilo-btn:(
+    colorFuente: #fff,
+    tamaño: 0.3em,
+    margen: 0 1em,
+    tFuente: 1rem,
+    aFuente: bold,
+    borde: 10px,
+);
+
+.footer__icon {
+    font-size: map-get($estilo-btn, tFuente);
+    & a{
+        margin: map-get($estilo-btn, margen);
+        font-weight: map-get($estilo-btn, aFuente);
+        padding: map-get($estilo-btn, tamaño);
+        border-radius: map-get($estilo-btn, borde);
+        color: map-get($estilo-btn, colorFuente);
+    }
+}

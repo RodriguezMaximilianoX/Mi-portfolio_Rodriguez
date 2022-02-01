@@ -10,13 +10,14 @@
         font-size: 24px;
         margin: 2vh 0;
         grid-column: 2/3;
+        
         & a{
             text-decoration: none;
             color: $blanco;
         }
     }
     & .navbar__menu{
-        grid-column: 5/8;
+        grid-column: 5/9;
         display: flex;
         justify-content: space-around;
         & li{
@@ -24,6 +25,11 @@
             & a{
                 text-decoration: none;
                 color: $blanco;
+                border-radius: 5px;
+                padding: 0.5rem;
+                &:hover{
+                    background: $celeste;
+                }
             }
         }
     }

@@ -20,9 +20,39 @@
             margin-top: 30em;
             opacity: 0;
         }
-        &.menu__toggle{
-            transform: translateX(40%);
+        & .menu__toggle{
             opacity: 1;
+        }
+    }
+
+    #main{
+        grid-template-areas: 
+        "main__title main__title main__title"
+        "main__image main__image main__image";
+        & .main__title{
+            grid-area: main__title;
+            grid-column: 1/13;
+            & h1{
+                font-size: 2rem;
+            }
+            & span{
+                font-size: 2rem;
+            }
+        }
+        & .main__image{
+            grid-area: main__image;
+            grid-column: 1/13;
+            & img{
+                width: 100%;
+            }
+        }
+    }
+
+    #footer{
+        display: flex;
+        justify-content: center;
+        & .footer__icon{
+            display: none;
         }
     }
 }

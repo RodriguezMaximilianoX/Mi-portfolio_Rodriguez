@@ -15,26 +15,38 @@ body{
 // main style
 
 #main{
-    min-height: 85vh;
-    display: flex;
-    padding: 30px;
+    min-height: 87vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin:1em 5em;
     justify-content: center;
     align-items: center;
     background: $blanco;
     & .main__image{
-        display: flex;
-        flex:1;
+        display: grid;
+        grid-column: 1 / 6;
         justify-content: center;
         & img{
             width: 100%;
         }
     }
     & .main__title{
-        display: flex;
-        flex: 1;
-        margin-left: 40px;
-        flex-wrap: wrap;
+        display: grid;
+        grid-column: 6 / 13;
         justify-content: center;
         align-items: center;
+        text-align: center;
+        font-family: $fuenteTitulos;
+        & h1{
+            padding: 1em 0;
+            font-size: 3rem;
+            color: $naranja;
+        }
+        & span{
+            font-size: 3rem;
+            color: $amarillo;
+        }
     }
 }
+
+@import "footer"
