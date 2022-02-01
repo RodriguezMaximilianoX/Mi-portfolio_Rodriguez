@@ -15,7 +15,7 @@ body{
 // main style
 
 #main{
-    min-height: 87vh;
+    min-height: 85vh;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     margin:1em 5em;
@@ -49,4 +49,36 @@ body{
     }
 }
 
-@import "footer"
+@import "footer";
+
+#experience{
+    min-height: 85vh;
+    & .experience__title{
+        font-family: $fuenteTitulos;
+        font-size: 2rem;
+        color: $naranja;
+        text-align: center;
+        margin: 1em;
+    }
+    & .grid-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2em 0;
+        & .experience__project{
+            display: grid;
+            margin: 0.5em 2em;
+            padding: 1em 0;
+            border-radius: 1rem;
+            text-align: center;
+            font-weight: bold;
+            justify-content: center;
+            background: $celeste;
+            & img{
+                width: 15vw;
+                height: 20vh;
+                padding: 1em;
+                margin: 0 auto;
+            }
+        }
+    }
+}

@@ -55,4 +55,15 @@
             display: none;
         }
     }
+
+    #experience{
+        & .grid-container{
+            grid-template-columns: repeat(2, 1fr);
+            & .experience__project{
+                & img{
+                    width: 25vw;
+                }
+            }
+        }
+    }
 }

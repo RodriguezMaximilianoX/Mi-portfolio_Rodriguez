@@ -65,7 +65,7 @@ body {
 }
 
 #main {
-  min-height: 87vh;
+  min-height: 85vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[12];
@@ -181,5 +181,46 @@ body {
   padding: 0.3em;
   border-radius: 10px;
   color: #fff;
+}
+
+#experience {
+  min-height: 85vh;
+}
+
+#experience .experience__title {
+  font-family: "Fredoka One", cursive;
+  font-size: 2rem;
+  color: #F2A007;
+  text-align: center;
+  margin: 1em;
+}
+
+#experience .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 2em 0;
+}
+
+#experience .grid-container .experience__project {
+  display: -ms-grid;
+  display: grid;
+  margin: 0.5em 2em;
+  padding: 1em 0;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: bold;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #448FF2;
+}
+
+#experience .grid-container .experience__project img {
+  width: 15vw;
+  height: 20vh;
+  padding: 1em;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
