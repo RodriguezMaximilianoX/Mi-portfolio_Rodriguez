@@ -51,6 +51,8 @@ body{
 
 @import "footer";
 
+// Experience style
+
 #experience{
     min-height: 85vh;
     & .experience__title{
@@ -73,11 +75,53 @@ body{
             font-weight: bold;
             justify-content: center;
             background: $celeste;
+            &:hover{
+                box-shadow: 0 0.3em 0.4rem $azul;
+                transition: all 0.3s;
+            }
             & img{
                 width: 15vw;
                 height: 20vh;
                 padding: 1em;
                 margin: 0 auto;
+            }
+        }
+    }
+}
+
+// Services Style
+
+#services{
+    min-height: 85vh;
+    & .services__title{
+        font-family: $fuenteTitulos;
+        font-size: 2rem;
+        color: $naranja;
+        text-align: center;
+        margin: 1em;
+    }
+    & .grid-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        & .services__item{
+            display: grid;
+            margin: 5em 2em;
+            padding: 3em;
+            border-radius: 1rem;
+            text-align: center;
+            font-weight: bold;
+            justify-content: center;
+            background-image: linear-gradient(to bottom, $naranja, $amarillo);
+            & i{
+                font-size: 5em;
+            }
+            & h3{
+                font-family: $fuenteTitulos;
+                padding: 1em;
+            }
+            & p{
+                font-weight: bold;
+                line-height: 1.5em;
             }
         }
     }

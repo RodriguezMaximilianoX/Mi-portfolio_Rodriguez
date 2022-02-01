@@ -75,5 +75,9 @@
   #experience .grid-container .experience__project img {
     width: 25vw;
   }
+  #services .grid-container {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
 }
 /*# sourceMappingURL=mediaQueries.css.map */

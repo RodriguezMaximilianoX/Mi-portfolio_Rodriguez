@@ -217,10 +217,65 @@ body {
   background: #448FF2;
 }
 
+#experience .grid-container .experience__project:hover {
+  -webkit-box-shadow: 0 0.3em 0.4rem #056CF2;
+          box-shadow: 0 0.3em 0.4rem #056CF2;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 #experience .grid-container .experience__project img {
   width: 15vw;
   height: 20vh;
   padding: 1em;
   margin: 0 auto;
+}
+
+#services {
+  min-height: 85vh;
+}
+
+#services .services__title {
+  font-family: "Fredoka One", cursive;
+  font-size: 2rem;
+  color: #F2A007;
+  text-align: center;
+  margin: 1em;
+}
+
+#services .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+#services .grid-container .services__item {
+  display: -ms-grid;
+  display: grid;
+  margin: 5em 2em;
+  padding: 3em;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: bold;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#F2A007), to(#F2B807));
+  background-image: linear-gradient(to bottom, #F2A007, #F2B807);
+}
+
+#services .grid-container .services__item i {
+  font-size: 5em;
+}
+
+#services .grid-container .services__item h3 {
+  font-family: "Fredoka One", cursive;
+  padding: 1em;
+}
+
+#services .grid-container .services__item p {
+  font-weight: bold;
+  line-height: 1.5em;
 }
 /*# sourceMappingURL=style.css.map */
