@@ -79,5 +79,29 @@
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
+  #contact .grid-container {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  #contact .grid-container .contact__form label input {
+    width: 40vw;
+  }
+  #contact .grid-container .contact__form label textarea {
+    width: 40vw;
+  }
+  #contact .grid-container .contact__form input {
+    width: 40vw;
+  }
+  #contact .grid-container .contact__image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #contact .grid-container .contact__image img {
+    width: 60%;
+  }
 }
 /*# sourceMappingURL=mediaQueries.css.map */

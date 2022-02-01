@@ -72,4 +72,30 @@
             grid-template-columns: repeat(1, 1fr);
         }
     }
+
+    #contact{
+        & .grid-container{
+            grid-template-columns: repeat(1, 1fr);
+            & .contact__form{
+                & label{
+                    & input{
+                        width: 40vw;
+                    }
+                    & textarea{
+                        width: 40vw;
+                    }
+                }
+                & input{
+                    width: 40vw;
+                }
+            }
+            & .contact__image{
+                display: flex;
+                justify-content: center;
+                & img{
+                    width: 60%;
+                }
+            }
+        }
+    }
 }

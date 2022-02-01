@@ -126,3 +126,88 @@ body{
         }
     }
 }
+
+// Contact style
+
+#contact{
+    min-height: 85vh;
+    & .contact__title{
+        font-family: $fuenteTitulos;
+        font-size: 2rem;
+        color: $naranja;
+        text-align: center;
+        margin: 1em;
+    }
+    & .grid-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        & .contact__form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            & label{
+                & input{
+                    border: none;
+                    width: 25vw;
+                    height: 5vh;
+                    margin: 0.5em;
+                    background: $celeste;
+                    border-bottom: 0.3em solid $amarillo;
+                    font-size: 15px;
+                    font-weight: bold;
+                    font-family: $fuenteGeneral;
+                    &::placeholder{
+                        color: $blanco;
+                        font-family: $fuenteGeneral;
+                    }
+                    &:focus{
+                        outline: none;
+                        border-bottom: 0.3em solid $naranja;
+                    }
+                }
+                & textarea{
+                    width: 25vw;
+                    padding: 1em;
+                    resize: none;
+                    border: none;
+                    border-radius: 1em;
+                    background: $celeste;
+                    border-bottom: 0.3em solid $amarillo;
+                    color: $blanco;
+                    font-size: 15px;
+                    font-weight: bold;
+                    font-family: $fuenteGeneral;
+                    &::placeholder{
+                        color: $blanco;
+                        font-family: $fuenteGeneral;
+                    }
+                    &:focus{
+                        outline: none;
+                        background: $azul;
+                        border-bottom: 0.3em solid $naranja;
+                    }
+                }
+            }
+            & input{
+                background: $celeste;
+                border: none;
+                border-radius: 1em;
+                padding: 1em;
+                width: 25vw;
+                color: $blanco;
+                font-size: 15px;
+                font-weight: bold;
+                font-family: $fuenteGeneral;
+                &:focus{
+                    background: $azul;
+                }
+            }
+        }
+        & .contact__image{
+            & img{
+                width: 60%;
+            }
+        }
+    }
+}

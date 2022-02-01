@@ -278,4 +278,136 @@ body {
   font-weight: bold;
   line-height: 1.5em;
 }
+
+#contact {
+  min-height: 85vh;
+}
+
+#contact .contact__title {
+  font-family: "Fredoka One", cursive;
+  font-size: 2rem;
+  color: #F2A007;
+  text-align: center;
+  margin: 1em;
+}
+
+#contact .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+#contact .grid-container .contact__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact .grid-container .contact__form label input {
+  border: none;
+  width: 25vw;
+  height: 5vh;
+  margin: 0.5em;
+  background: #448FF2;
+  border-bottom: 0.3em solid #F2B807;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+#contact .grid-container .contact__form label input::-webkit-input-placeholder {
+  color: #F2F2F2;
+  font-family: "Roboto", sans-serif;
+}
+
+#contact .grid-container .contact__form label input:-ms-input-placeholder {
+  color: #F2F2F2;
+  font-family: "Roboto", sans-serif;
+}
+
+#contact .grid-container .contact__form label input::-ms-input-placeholder {
+  color: #F2F2F2;
+  font-family: "Roboto", sans-serif;
+}
+
+#contact .grid-container .contact__form label input::placeholder {
+  color: #F2F2F2;
+  font-family: "Roboto", sans-serif;
+}
+
+#contact .grid-container .contact__form label input:focus {
+  outline: none;
+  border-bottom: 0.3em solid #F2A007;
+}
+
+#contact .grid-container .contact__form label textarea {
+  width: 25vw;
+  padding: 1em;
+  resize: none;
+  border: none;
+  border-radius: 1em;
+  background: #448FF2;
+  border-bottom: 0.3em solid #F2B807;
+  color: #F2F2F2;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+#contact .grid-container .contact__form label textarea::-webkit-input-placeholder {
+  color: #F2F2F2;
+  font-family: "Roboto", sans-serif;
+}
+
+#contact .grid-container .contact__form label textarea:-ms-input-placeholder {
+  color: #F2F2F2;
+  font-family: "Roboto", sans-serif;
+}
+
+#contact .grid-container .contact__form label textarea::-ms-input-placeholder {
+  color: #F2F2F2;
+  font-family: "Roboto", sans-serif;
+}
+
+#contact .grid-container .contact__form label textarea::placeholder {
+  color: #F2F2F2;
+  font-family: "Roboto", sans-serif;
+}
+
+#contact .grid-container .contact__form label textarea:focus {
+  outline: none;
+  background: #056CF2;
+  border-bottom: 0.3em solid #F2A007;
+}
+
+#contact .grid-container .contact__form input {
+  background: #448FF2;
+  border: none;
+  border-radius: 1em;
+  padding: 1em;
+  width: 25vw;
+  color: #F2F2F2;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+#contact .grid-container .contact__form input:focus {
+  background: #056CF2;
+}
+
+#contact .grid-container .contact__image img {
+  width: 60%;
+}
 /*# sourceMappingURL=style.css.map */
