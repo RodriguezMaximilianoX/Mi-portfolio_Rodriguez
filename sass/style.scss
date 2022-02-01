@@ -1,0 +1,40 @@
+@import "vars";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $fuenteGeneral;
+}
+
+@import "header";
+
+// main style
+
+#main{
+    min-height: 85vh;
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    background: $blanco;
+    & .main__image{
+        display: flex;
+        flex:1;
+        justify-content: center;
+        & img{
+            width: 100%;
+        }
+    }
+    & .main__title{
+        display: flex;
+        flex: 1;
+        margin-left: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}

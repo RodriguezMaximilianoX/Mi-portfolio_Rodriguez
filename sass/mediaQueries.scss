@@ -1,0 +1,28 @@
+@import "vars";
+
+@media only screen and (max-width: 780px){
+    #navbar{
+        position: relative;
+        & .navbar__mobile{
+            display: block;
+            grid-column: 8/9;
+            font-size: 2em;
+            background: $azul;
+            border: none;
+        }
+        & .navbar__menu{
+            position: absolute;
+            width: 100%;
+            height: 70vh;
+            display: grid;
+            align-items: center;
+            background: $azul;
+            margin-top: 30em;
+            opacity: 0;
+        }
+        &.menu__toggle{
+            transform: translateX(40%);
+            opacity: 1;
+        }
+    }
+}

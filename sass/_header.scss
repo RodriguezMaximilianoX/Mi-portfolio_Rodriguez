@@ -1,0 +1,33 @@
+@import "vars";
+
+#navbar{
+    background: $azul;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    & .navbar__logo{
+        font-weight: bold;
+        font-size: 24px;
+        margin: 2vh 0;
+        grid-column: 2/3;
+        & a{
+            text-decoration: none;
+            color: $blanco;
+        }
+    }
+    & .navbar__menu{
+        grid-column: 5/8;
+        display: flex;
+        justify-content: space-around;
+        & li{
+            list-style: none;
+            & a{
+                text-decoration: none;
+                color: $blanco;
+            }
+        }
+    }
+    & .navbar__mobile{
+        display: none;
+    }
+}
