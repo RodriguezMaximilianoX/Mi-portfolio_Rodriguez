@@ -410,4 +410,24 @@ body {
 #contact .grid-container .contact__image img {
   width: 60%;
 }
+
+#info {
+  min-height: 87vh;
+}
+
+#info .info__title {
+  font-family: "Fredoka One", cursive;
+  font-size: 2rem;
+  color: #F2A007;
+  text-align: center;
+  margin: 1em;
+}
+
+#info .info__content {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  padding: 2em;
+}
 /*# sourceMappingURL=style.css.map */
