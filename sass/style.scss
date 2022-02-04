@@ -8,6 +8,7 @@
 
 body{
     font-family: $fuenteGeneral;
+    background: $blanco
 }
 
 @import "header";
@@ -21,7 +22,6 @@ body{
     margin:1em 5em;
     justify-content: center;
     align-items: center;
-    background: $blanco;
     & .main__image{
         display: grid;
         grid-column: 1 / 6;
