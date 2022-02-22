@@ -1,7 +1,8 @@
 @import "vars";
 
 #navbar{
-    background: $azul;
+    background: linear-gradient(to bottom, $principal, #000);
+    opacity: 0.9;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     align-items: center;
@@ -28,7 +29,7 @@
                 border-radius: 5px;
                 padding: 0.5rem;
                 &:hover{
-                    background: $celeste;
+                    background: $fondo;
                 }
             }
         }

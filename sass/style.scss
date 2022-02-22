@@ -8,6 +8,8 @@
 
 body{
     font-family: $fuenteGeneral;
+    // background-image: url(../assets/fondo.png)
+    background: #000
 }
 
 @import "header";
@@ -39,11 +41,11 @@ body{
         & h1{
             padding: 1em 0;
             font-size: 3rem;
-            color: $naranja;
+            color: $blanco;
         }
         & span{
             font-size: 3rem;
-            color: $amarillo;
+            color: $titulo;
         }
     }
 }
@@ -57,7 +59,7 @@ body{
     & .experience__title{
         font-family: $fuenteTitulos;
         font-size: 2rem;
-        color: $naranja;
+        color: $titulo;
         text-align: center;
         margin: 1em;
     }
@@ -71,11 +73,12 @@ body{
             padding: 1em 0;
             border-radius: 1rem;
             text-align: center;
+            color: $blanco;
             font-weight: bold;
             justify-content: center;
-            background: $celeste;
+            background: $fondo;
             &:hover{
-                box-shadow: 0 0.3em 0.4rem $azul;
+                box-shadow: 0 0.3em 0.4rem $subtitulo;
                 transition: all 0.3s;
             }
             & img{
@@ -95,7 +98,7 @@ body{
     & .services__title{
         font-family: $fuenteTitulos;
         font-size: 2rem;
-        color: $naranja;
+        color: $titulo;
         text-align: center;
         margin: 1em;
     }
@@ -110,7 +113,7 @@ body{
             text-align: center;
             font-weight: bold;
             justify-content: center;
-            background-image: linear-gradient(to bottom, $naranja, $amarillo);
+            background-image: linear-gradient(to bottom, $titulo, $subtitulo);
             & i{
                 font-size: 5em;
             }
@@ -133,7 +136,7 @@ body{
     & .contact__title{
         font-family: $fuenteTitulos;
         font-size: 2rem;
-        color: $naranja;
+        color: $titulo;
         text-align: center;
         margin: 1em;
     }
@@ -151,8 +154,8 @@ body{
                     width: 25vw;
                     height: 5vh;
                     margin: 0.5em;
-                    background: $celeste;
-                    border-bottom: 0.3em solid $amarillo;
+                    background: $fondo;
+                    border-bottom: 0.3em solid $subtitulo;
                     font-size: 15px;
                     font-weight: bold;
                     font-family: $fuenteGeneral;
@@ -162,7 +165,7 @@ body{
                     }
                     &:focus{
                         outline: none;
-                        border-bottom: 0.3em solid $naranja;
+                        border-bottom: 0.3em solid $titulo;
                     }
                 }
                 & textarea{
@@ -171,8 +174,8 @@ body{
                     resize: none;
                     border: none;
                     border-radius: 1em;
-                    background: $celeste;
-                    border-bottom: 0.3em solid $amarillo;
+                    background: $fondo;
+                    border-bottom: 0.3em solid $subtitulo;
                     color: $blanco;
                     font-size: 15px;
                     font-weight: bold;
@@ -183,13 +186,13 @@ body{
                     }
                     &:focus{
                         outline: none;
-                        background: $azul;
-                        border-bottom: 0.3em solid $naranja;
+                        background: $titulo;
+                        border-bottom: 0.3em solid $titulo;
                     }
                 }
             }
             & input{
-                background: $celeste;
+                background: $fondo;
                 border: none;
                 border-radius: 1em;
                 padding: 1em;
@@ -199,7 +202,7 @@ body{
                 font-weight: bold;
                 font-family: $fuenteGeneral;
                 &:focus{
-                    background: $azul;
+                    background: $titulo;
                 }
             }
         }
@@ -211,18 +214,19 @@ body{
     }
 }
 
-// Contact style
+// About me style
 
 #info{
     min-height: 87vh;
     & .info__title{
         font-family: $fuenteTitulos;
         font-size: 2rem;
-        color: $naranja;
+        color: $titulo;
         text-align: center;
         margin: 1em;
     }
     & .info__content{
+        color: $blanco;
         text-align: center;
         font-weight: bold;
         font-size: 1.5em;

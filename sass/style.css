@@ -7,10 +7,13 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  background: #000;
 }
 
 #navbar {
-  background: #056CF2;
+  background: -webkit-gradient(linear, left top, left bottom, from(#640EED), to(#000));
+  background: linear-gradient(to bottom, #640EED, #000);
+  opacity: 0.9;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[8];
@@ -57,7 +60,7 @@ body {
 }
 
 #navbar .navbar__menu li a:hover {
-  background: #448FF2;
+  background: #2E076E;
 }
 
 #navbar .navbar__mobile {
@@ -113,19 +116,21 @@ body {
 #main .main__title h1 {
   padding: 1em 0;
   font-size: 3rem;
-  color: #F2A007;
+  color: #F2F2F2;
 }
 
 #main .main__title span {
   font-size: 3rem;
-  color: #F2B807;
+  color: #4E11FA;
 }
 
 #footer {
   display: -ms-grid;
   display: grid;
   height: 7vh;
-  background: #056CF2;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#640EED));
+  background: linear-gradient(to bottom, #000, #640EED);
+  opacity: 0.9;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -179,7 +184,7 @@ body {
   font-weight: bold;
   padding: 0.3em;
   border-radius: 10px;
-  color: #fff;
+  color: #F2F2F2;
 }
 
 #experience {
@@ -189,7 +194,7 @@ body {
 #experience .experience__title {
   font-family: "Fredoka One", cursive;
   font-size: 2rem;
-  color: #F2A007;
+  color: #4E11FA;
   text-align: center;
   margin: 1em;
 }
@@ -209,16 +214,17 @@ body {
   padding: 1em 0;
   border-radius: 1rem;
   text-align: center;
+  color: #F2F2F2;
   font-weight: bold;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #448FF2;
+  background: #2E076E;
 }
 
 #experience .grid-container .experience__project:hover {
-  -webkit-box-shadow: 0 0.3em 0.4rem #056CF2;
-          box-shadow: 0 0.3em 0.4rem #056CF2;
+  -webkit-box-shadow: 0 0.3em 0.4rem #9156F0;
+          box-shadow: 0 0.3em 0.4rem #9156F0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -237,7 +243,7 @@ body {
 #services .services__title {
   font-family: "Fredoka One", cursive;
   font-size: 2rem;
-  color: #F2A007;
+  color: #4E11FA;
   text-align: center;
   margin: 1em;
 }
@@ -260,8 +266,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#F2A007), to(#F2B807));
-  background-image: linear-gradient(to bottom, #F2A007, #F2B807);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4E11FA), to(#9156F0));
+  background-image: linear-gradient(to bottom, #4E11FA, #9156F0);
 }
 
 #services .grid-container .services__item i {
@@ -285,7 +291,7 @@ body {
 #contact .contact__title {
   font-family: "Fredoka One", cursive;
   font-size: 2rem;
-  color: #F2A007;
+  color: #4E11FA;
   text-align: center;
   margin: 1em;
 }
@@ -318,8 +324,8 @@ body {
   width: 25vw;
   height: 5vh;
   margin: 0.5em;
-  background: #448FF2;
-  border-bottom: 0.3em solid #F2B807;
+  background: #2E076E;
+  border-bottom: 0.3em solid #9156F0;
   font-size: 15px;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
@@ -347,7 +353,7 @@ body {
 
 #contact .grid-container .contact__form label input:focus {
   outline: none;
-  border-bottom: 0.3em solid #F2A007;
+  border-bottom: 0.3em solid #4E11FA;
 }
 
 #contact .grid-container .contact__form label textarea {
@@ -356,8 +362,8 @@ body {
   resize: none;
   border: none;
   border-radius: 1em;
-  background: #448FF2;
-  border-bottom: 0.3em solid #F2B807;
+  background: #2E076E;
+  border-bottom: 0.3em solid #9156F0;
   color: #F2F2F2;
   font-size: 15px;
   font-weight: bold;
@@ -386,12 +392,12 @@ body {
 
 #contact .grid-container .contact__form label textarea:focus {
   outline: none;
-  background: #056CF2;
-  border-bottom: 0.3em solid #F2A007;
+  background: #4E11FA;
+  border-bottom: 0.3em solid #4E11FA;
 }
 
 #contact .grid-container .contact__form input {
-  background: #448FF2;
+  background: #2E076E;
   border: none;
   border-radius: 1em;
   padding: 1em;
@@ -403,7 +409,7 @@ body {
 }
 
 #contact .grid-container .contact__form input:focus {
-  background: #056CF2;
+  background: #4E11FA;
 }
 
 #contact .grid-container .contact__image img {
@@ -417,12 +423,13 @@ body {
 #info .info__title {
   font-family: "Fredoka One", cursive;
   font-size: 2rem;
-  color: #F2A007;
+  color: #4E11FA;
   text-align: center;
   margin: 1em;
 }
 
 #info .info__content {
+  color: #F2F2F2;
   text-align: center;
   font-weight: bold;
   font-size: 1.5em;

@@ -7,7 +7,7 @@
             display: block;
             grid-column: 8/9;
             font-size: 2em;
-            background: $azul;
+            background: transparent;
             border: none;
         }
         & .navbar__menu{
@@ -16,8 +16,8 @@
             height: 70vh;
             display: grid;
             align-items: center;
-            background: $azul;
-            margin-top: 30em;
+            background: linear-gradient(to bottom, #000, $principal);
+            margin-top: 31.7em;
             opacity: 0;
         }
         & .menu__toggle{
@@ -58,10 +58,10 @@
 
     #experience{
         & .grid-container{
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr;
             & .experience__project{
                 & img{
-                    width: 25vw;
+                    width: 50%;
                 }
             }
         }

@@ -3,7 +3,8 @@
 #footer{
     display: grid;
     height: 7vh;
-    background: $azul;
+    background: linear-gradient(to bottom, #000, $principal);
+    opacity: 0.9;
     align-items: center;
     grid-template-columns: repeat(8, 1fr);
     & .footer__logo{
@@ -36,7 +37,7 @@ $redes:(
 }
 
 $estilo-btn:(
-    colorFuente: #fff,
+    colorFuente: $blanco,
     tamaño: 0.3em,
     margen: 0 1em,
     tFuente: 1rem,
