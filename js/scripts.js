@@ -1,5 +1,5 @@
 
-var btn = document.getElementById("btn"),
+let btn = document.getElementById("btn"),
     menu = document.getElementById("menu"),
     contador = 0;
 
