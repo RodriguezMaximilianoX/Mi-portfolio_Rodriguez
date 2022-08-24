@@ -87,6 +87,10 @@ body{
                 padding: 1em;
                 margin: 0 auto;
             }
+            & a{
+                color: $blanco;
+                text-decoration: none;
+            }
         }
     }
 }
@@ -155,17 +159,17 @@ body{
                     height: 5vh;
                     margin: 0.5em;
                     background: $fondo;
-                    border-bottom: 0.3em solid $subtitulo;
+                    border-bottom: 0.3em solid #4D77A0;
                     font-size: 15px;
                     font-weight: bold;
                     font-family: $fuenteGeneral;
                     &::placeholder{
-                        color: $blanco;
+                        color: $principal;
                         font-family: $fuenteGeneral;
                     }
                     &:focus{
                         outline: none;
-                        border-bottom: 0.3em solid $titulo;
+                        border-bottom: 0.3em solid $principal;
                     }
                 }
                 & textarea{
@@ -175,19 +179,20 @@ body{
                     border: none;
                     border-radius: 1em;
                     background: $fondo;
-                    border-bottom: 0.3em solid $subtitulo;
-                    color: $blanco;
+                    border-bottom: 0.3em solid #4D77A0;
+                    color: $principal;
                     font-size: 15px;
                     font-weight: bold;
                     font-family: $fuenteGeneral;
                     &::placeholder{
-                        color: $blanco;
+                        color: $principal;
                         font-family: $fuenteGeneral;
                     }
                     &:focus{
                         outline: none;
-                        background: $titulo;
-                        border-bottom: 0.3em solid $titulo;
+                        background: #4D77A0;
+                        border-bottom: 0.3em solid $principal;
+                        color: $blanco;
                     }
                 }
             }
@@ -197,12 +202,13 @@ body{
                 border-radius: 1em;
                 padding: 1em;
                 width: 25vw;
-                color: $blanco;
+                color: $principal;
                 font-size: 15px;
                 font-weight: bold;
                 font-family: $fuenteGeneral;
                 &:focus{
-                    background: $titulo;
+                    background: #4D77A0;
+                    color: $blanco;
                 }
             }
         }
